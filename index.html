@@ -5,16 +5,51 @@
     <title>Mantle: Open Source Declaration</title>
     <meta name="description" content="Official page for the Mantle project, showcasing the SOSP'25 accepted paper 'Mantle: Efficient Hierarchical Metadata Management for Cloud Object Storage Services">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; padding: 20px; }
-        h1 { color: #333; }
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 40px auto; 
+            max-width: 800px; 
+            padding: 20px; 
+        }
+        h1 { 
+            color: #333; 
+            text-align: center;
+            font-size: 3em; /* Make 'Mantle' title bigger */
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            color: #333;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 40px; /* More space after subtitle */
+        }
         .placeholder { color: #0066cc; text-decoration: underline; }
-        #github-notice { background-color: #f8f9fa; border-left: 4px solid #ffc107; padding: 15px; margin-top: 20px; }
+        #github-notice { 
+            background-color: #f8f9fa; 
+            border-left: 4px solid #ffc107; 
+            padding: 15px; 
+            margin-top: 20px; 
+        }
         a { color: #0066cc; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .logo { 
+            display: block;
+            margin: 20px auto 30px auto; /* Center the logo and add space below */
+            max-width: 250px; /* A bit larger logo */
+            border-radius: 8px; 
+        }
     </style>
 </head>
 <body>
-    <h1>Mantle: Efficient Hierarchical Metadata Management for Cloud Object Storage Services</h1>
+    <img src="mantle.jpg" alt="Mantle Logo" class="logo">
+    <h1>Mantle</h1>
+    <p class="subtitle">Efficient Hierarchical Metadata Management for Cloud Object Storage Services</p>
+
     <p>
         The Mantle paper presented at <strong>SOSP'25</strong> introduces a novel hierarchical namespace metadata management approach for cloud object storage services. Mantle has been deployed on Baidu Object Storage <strong>(BOS)</strong> for over 2 years, a service developed by <strong>Baidu Canghai Storage</strong>.
         We will open-source the prototype implementation to support further research and collaboration.
@@ -32,4 +67,3 @@
     </section>
 </body>
 </html>
-
